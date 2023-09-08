@@ -14,7 +14,7 @@ contract ConstantsExample {
         return MY_ADDRESS;
     }
 
-    function getMyUint() public view returns (MY_UINT) {
+    function getMyUint() public view returns (uint) {
         return MY_UINT;
     }
 
