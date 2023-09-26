@@ -11,5 +11,5 @@ import "./ContractY.sol";
 
 // Initializing Parent Contracts in the Inheritance List
 contract ContractB is ContractX("input to X"), ContractY("input to Y") {
-    // do something
+    // do something 
 }
