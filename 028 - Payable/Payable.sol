@@ -18,6 +18,10 @@ contract Payable {
         
     }
 
+    function getBalance() external view returns (uint) {
+        return address(this).balance;
+    }
+
     // Thos function is not payable, cannot receive Ether
     // If someone tries to send Ether to this function, it will throw an error.
     function notPayable() public {
@@ -42,7 +46,7 @@ contract Payable {
         
         // note that "to" is declared as payable
         (bool success, ) = _to.call{value: _amount}("");
-        require(success, "Failed to send Etehr");
+        require(success, "Failed to send Ether");
     }
 
 }
