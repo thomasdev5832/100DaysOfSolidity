@@ -14,8 +14,14 @@ contract CommitReveal {
 
     function reveal(uint256 value) external {
         require(!revealed, "CommitReveal: Alreadt reveled");
-        // Keccak256 -> cryptographic hash function
-        // Keccak256 takes an input of any length and produces a 256-bit (32-byte) hash as output. 
+        /*Keccak256 -> cryptographic hash function
+         Keccak256 takes an input of any length and produces a 256-bit (32-byte) hash as output. 
+         
+         Uses cases: 
+         - Ensuring Data Integrity
+         - Build Secure Authentication Mechanisms
+         - Verifying Digital Signatures
+        */
         require(keccak256(abi.encodePacked(value)) == commitment, "CommitReveal: Invalid reveal");
         revealed = true;
     }
