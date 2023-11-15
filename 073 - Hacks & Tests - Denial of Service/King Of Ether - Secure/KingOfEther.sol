@@ -12,7 +12,6 @@ contract KingOfEther {
     uint public balance;
     mapping(address => uint) public balances;
 
-
     // Access Control and Role-Based Permissions
     modifier onlyKing {
         require(msg.sender == king, "Only the current king can perform this action!");
