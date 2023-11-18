@@ -8,14 +8,14 @@ pragma solidity ^0.8.3;
    -> promising high returns or exclusive features. 
    -> however, once you interact with it, the contract exploits vulnerabilities in your transaction to drain your funds.
 
-    How the Honeypot Works:
+    💀 How the Honeypot Works:
     1. Promise of High Returns
     2. Complex Control Flow
     3. Hidden Exploit
     4. Fund Draining
     5. Quick Exit
 
-    🛡 Protection Against Honeypots:
+    🛡️ Protection Against Honeypots:
     1. Code Audit
     2. Minimal Trust
     3. Reputable Sources
