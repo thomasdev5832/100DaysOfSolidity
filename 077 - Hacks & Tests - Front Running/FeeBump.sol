@@ -14,7 +14,7 @@ contract FeeBump {
 
     function submitTransaction(uint256 amount, uint256 gasPrice) external {
         pendingTransactions[msg.sender] = gasPrice;
-        if(gasPrice < pendingTransactions[msg.sender]) {
+        if(gasPrice > pendingTransactions[msg.sender]) {
             pendingTransactions[msg.sender] = gasPrice;
         }
     }
