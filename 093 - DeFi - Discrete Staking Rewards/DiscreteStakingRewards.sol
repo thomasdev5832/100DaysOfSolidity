@@ -8,7 +8,7 @@ import "./IERC20.sol";
 
     🧩 Discrete Staking Rewards: rewards accrue continuously over time, discrete staking rewards provide periodic and distinct payouts.
     
-    📈 Benefirts:
+    📈 Benefits:
         1. Predictable Payouts
         2. Lower Gas Costs
         3. Improved User Experience
