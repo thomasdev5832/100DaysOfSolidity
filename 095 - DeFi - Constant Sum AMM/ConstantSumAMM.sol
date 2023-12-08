@@ -12,7 +12,7 @@ import "./IERC20.sol";
 
 */
 
-contract ContractSumAMM {
+contract ConstantSumAMM {
 
     IERC20 public immutable token0;
     IERC20 public immutable token1;
